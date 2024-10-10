@@ -8,6 +8,8 @@ body {
 }
 .background1 {
   position: relative;
+  width: 1505px;
+ height: 866px;
 }
 .background2 {
   position: absolute;
