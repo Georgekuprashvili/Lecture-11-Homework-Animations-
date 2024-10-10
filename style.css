@@ -6,8 +6,11 @@ body {
   height: 100vh;
   width: 100vh;
 }
-.background {
+.background1 {
   position: relative;
+}
+.background2 {
+  position: absolute;
 }
 .mario-icon1 {
   position: absolute;
