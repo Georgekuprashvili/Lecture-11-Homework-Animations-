@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  height: 100vh;
+  width: 100vh;
+}
+.background {
+  position: relative;
+}
+.mario-icon1 {
+  position: absolute;
+  bottom: 195px;
+  left: 0;
+  animation-name: moving-mario1;
+  animation-duration: 15s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes moving-mario1 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 1200px;
+  }
+}
+.mario-icon2 {
+  position: absolute;
+  left: 0;
+  bottom: 60px;
+  animation-name: moving-mario2;
+  animation-duration: 15s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes moving-mario2 {
+  0% {
+    left: calc(100% - 300px);
+  }
+  50% {
+    left: calc(100% - 1000px);
+  }
+  100% {
+    left: calc(100% - 300px);
+  }
+}
+.tree {
+  position: absolute;
+  top: 400px;
+  right: 200px;
+  width: 100px;
+  height: 100px;
+  animation-name: tree-moving;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: reverse;
+}
+@keyframes tree-moving {
+  0% {
+    right: calc(100% - 100px);
+  }
+  100% {
+    right: calc(100% - 1600px);
+  }
+}
+.sun {
+  position: absolute;
+  top: 36px;
+  left: 848px;
+  animation-name: sun-rotate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes sun-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
